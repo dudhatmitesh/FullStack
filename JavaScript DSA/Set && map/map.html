@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let myMap = new Map([["m1","D.K"] , ["m2" , "P.K"]])
+    myMap.set("m3" , "K.G.F")
+    myMap.set("m3" , "Narayan")
+    myMap.delete("m1")   
+    
+    console.log(myMap.size)
+    console.log(myMap.get("m2"))
+    console.log(myMap.values())
+    console.log(myMap)
+
+    myMap.clear()
+
+    myMap.forEach((el,key)=>{
+        console.log(el,key)
+    })
+</script>

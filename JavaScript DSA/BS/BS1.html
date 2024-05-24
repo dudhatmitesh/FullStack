@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function binarySearch(arr,target, start ,end){
+        if(start > end){
+            return -1;
+        }
+        let mid =Math.round((start+end)/2)
+        if(arr[mid]=== target){
+            return mid
+        }
+        if(arr[mid]<target){
+            return binarySearch(arr,target,mid + 1, end)
+        }else{
+            return binarySearch(arr,target,start, mid -1 )
+        }
+    }
+    let arr =[-1,0,3,5,9,12]
+    console.log(binarySearch(arr,2,0,arr.length-1))
+</script>

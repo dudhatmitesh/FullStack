@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    
+
+    function link(value){
+        this.value = value;
+        this.next = null;
+    }
+
+    const m1=new link(11)
+    const m2=new link(12)
+    const m3=new link(13)
+    const m4=new link(14)
+    const m5=new link(15)
+  
+
+    m1.next=m2
+    m2.next=m3
+    m3.next=m4
+    m4.next=m5
+  
+let curr=m1
+while(curr!=null){
+    console.log(curr.value)
+    curr=curr.next
+}
+</script>
